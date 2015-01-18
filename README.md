@@ -66,10 +66,7 @@ if ($form->isValid($post)) {
 
 ## Code example
 
-Full-working example
-
-@see example.php
-
+Full-working example @see [example.php](example.php)
 
 ## License
 
