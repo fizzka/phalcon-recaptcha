@@ -8,6 +8,13 @@ This is small component to provide [Google Recaptcha](https://www.google.com/rec
 It uses phalcon DI.
 Be sure, you supply DI this correct recaptcha configuration.
 
+## Installation
+
+Feel free to fork, clone this repo, or install via composer:
+
+```sh
+composer require fizzka/phalcon-recaptcha
+```
 
 ## Usage
 
