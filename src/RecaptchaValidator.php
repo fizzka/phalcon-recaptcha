@@ -2,9 +2,9 @@
 
 namespace Fizz\Phalcon;
 
-use Phalcon\Validation\Validator,
-	Phalcon\Validation\ValidatorInterface,
-	Phalcon\Validation\Message;
+use Phalcon\Validation\Validator;
+use Phalcon\Validation\ValidatorInterface;
+use Phalcon\Validation\Message;
 
 class RecaptchaValidator extends Validator implements ValidatorInterface
 {
@@ -19,7 +19,6 @@ class RecaptchaValidator extends Validator implements ValidatorInterface
 		$ip = $validation->request->getClientAddress();
 
 		if (!$this->verify($value, $ip)) {
-
 			$message = $this->getOption('message');
 			if (!$message) {
 				$message = 'Please, confirm you are human';
@@ -63,5 +62,4 @@ class RecaptchaValidator extends Validator implements ValidatorInterface
 		$response = json_decode(file_get_contents($url));
 		return $response->success;
 	}
-
 }

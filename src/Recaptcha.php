@@ -30,5 +30,4 @@ HTML;
 	public function getJsApiUrl() {
 		return $this->getConfig()->jsApiUrl;
 	}
-
 }

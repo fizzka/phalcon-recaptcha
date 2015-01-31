@@ -3,9 +3,8 @@
 require_once 'src/Recaptcha.php';
 require_once 'src/RecaptchaValidator.php';
 
-use Fizz\Phalcon\Recaptcha,
-	Fizz\Phalcon\RecaptchaValidator;
-
+use Fizz\Phalcon\Recaptcha;
+use Fizz\Phalcon\RecaptchaValidator;
 
 // setting up config & di
 
