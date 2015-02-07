@@ -5,6 +5,8 @@ namespace Fizz\Phalcon;
 class Recaptcha extends \Phalcon\Forms\Element
 {
 
+	protected $config;
+
 	public function render($attributes = null) {
 		return <<<HTML
 <script type="text/javascript" src="{$this->getJsApiUrl()}" async defer></script>
