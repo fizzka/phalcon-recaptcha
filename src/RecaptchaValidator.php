@@ -2,9 +2,9 @@
 
 namespace Fizz\Phalcon;
 
-use Phalcon\Validation\Validator;
-use Phalcon\Validation\ValidatorInterface;
-use Phalcon\Validation\Message;
+use \Phalcon\Validation\Validator;
+use \Phalcon\Validation\ValidatorInterface;
+use \Phalcon\Validation\Message;
 
 class RecaptchaValidator extends Validator implements ValidatorInterface
 {
@@ -12,7 +12,7 @@ class RecaptchaValidator extends Validator implements ValidatorInterface
 	/**
 	 * @see phalcon docs
 	 */
-	public function validate($validation, $attribute) {
+	public function validate(\Phalcon\Validation $validation, $attribute) {
 		$this->setConfig($validation->config->recaptcha);
 
 		$value = $validation->getValue('g-recaptcha-response');
