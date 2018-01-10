@@ -1,0 +1,6 @@
+pipeline:
+  build:
+    image: alpine
+    commands:
+      - cat /etc/os-release
+      - uname -a
